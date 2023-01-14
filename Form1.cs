@@ -68,6 +68,12 @@ namespace FuntieMaker
             panel1.Refresh();
         }
 
+        private void button11_Click(object sender, EventArgs e)
+        {
+            actueleKeuze = 11;
+            panel1.Refresh();
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
@@ -171,12 +177,21 @@ namespace FuntieMaker
                         break;
 
                     case 10:
+                        // clear button
                         break;
 
+                    case 11:
+                        y = (1.5*Math.Pow(x, 3) - 200*Math.Pow(x, 2) + 100*x +50);
+                        xpos = (int)(x * 50);
+                        ypos = (int)(-y * 50);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
+                        break;
                     default:
                         break;
                 }
             }
         }
+
+        
     }
 }
