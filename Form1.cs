@@ -115,21 +115,21 @@ namespace FuntieMaker
                         y = x;
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 2:
                         y = Math.Pow(x, 2);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 3:
                         y = Math.Pow(x, 3);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 4:
@@ -152,28 +152,28 @@ namespace FuntieMaker
                         y = Math.Sin(x);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 7:
                         y = Math.Cos(x);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 8:
                         y = (int)(x);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 9:
                         y = Math.Abs(x);
                         xpos = (int)(x * 50);
                         ypos = (int)(-y * 50);
-                        g.FillEllipse(penseelCurve, xpos, ypos, 2, 2);
+                        try { g.FillEllipse(penseelCurve, xpos, ypos, 2, 2); } catch (OverflowException) { }
                         break;
 
                     case 10:
