@@ -107,7 +107,7 @@ namespace FuntieMaker
             int xpos, ypos;
 
             
-            for (x = -5; x <= 5; x += 0.001)
+            for (x = -6; x <= 6; x += 0.001)
             {
                 switch (actueleKeuze)
                 {
